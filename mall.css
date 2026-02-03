@@ -4,37 +4,37 @@ body {
 }
 
 @font-face {
-	font-family: OdorMeanChey;
+	font-family: "OdorMeanChey", sans-serif;
   src: url(OdorMeanChey-Regular.ttf);
 }
 @font-face {
-	font-family: Onest ExtraBold;
+	font-family: "Onest ExtraBold", sans-serif;
   src: url(Onest-VariableFont_wght.ttf);
   font-weight: 100 1000;
 }
 @font-face {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans Ex", sans-serif;
   src: url(OpenSans-VariableFont_wdth,wght.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: Nova Oval;
+	font-family: "Nova Oval", sans-serif;
   src: url(NovaOval-Regular.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: Nova Square;
+	font-family: "Nova Square", sans-serif;
   src: url(NovaSquare-Regular.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: Inter;
+	font-family: "Inter", sans-serif;
   src: url(Inter-VariableFont_opsz,wght.ttf);
   font-weight: 300 1000;
 }
 
 .Quoteurce {
-	font-family: Onest ExtraBold;
+	font-family: "Onest ExtraBold", sans-serif;
 	font-weight: 1000;
 	margin-top: 0.2em;
 	margin-bottom: 0em;
@@ -167,7 +167,7 @@ a:hover {
 .poweredByAI {
 	display: flex;
 	flex-direction: row;
-	width: 100%-20px;
+	width: 100;
 	justify-content: center;
 	padding-top: 3%;
 	padding-bottom: 3%;
@@ -183,12 +183,11 @@ a:hover {
 .poweredByAIText {
 	font-family: OpenSans Ex;
 	font-weight: 800;
-	font-size: 4.5em;
+	font-size: 4em;
 	object-fit: contain;
 	width: 50%;
 	margin-top: auto;
 	margin-bottom: auto;
-	flex-grow: 60%;
 }
 
 .chatGPTDiv {
@@ -282,7 +281,7 @@ a:hover {
 	font-family: OpenSans Ex;
 	font-weight: 800;
 	font-size: 1.5em;
-	margin: 0;
+	margin: 0em;
 }
 
 .textOmNoel {
@@ -290,7 +289,7 @@ a:hover {
 	font-family: OpenSans Ex;
 	font-weight: 800;
 	font-size: 1.5em;
-	margin: 0;
+	margin: 0em;
 }
 
 .omNoel {
