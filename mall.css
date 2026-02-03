@@ -4,44 +4,44 @@ body {
 }
 
 @font-face {
-	font-family: "OdorMeanChey", sans-serif;
+	font-family: "OdorMeanChey";
   src: url(OdorMeanChey-Regular.ttf);
 }
 @font-face {
-	font-family: "Onest ExtraBold", sans-serif;
+	font-family: "Onest-ExtraBold";
   src: url(Onest-VariableFont_wght.ttf);
   font-weight: 100 1000;
 }
 @font-face {
-	font-family: "OpenSans Ex", sans-serif;
+	font-family: "OpenSans-Ex";
   src: url(OpenSans-VariableFont_wdth,wght.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: "Nova Oval", sans-serif;
+	font-family: "Nova-Oval";
   src: url(NovaOval-Regular.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: "Nova Square", sans-serif;
+	font-family: "Nova-Square";
   src: url(NovaSquare-Regular.ttf);
   font-weight: 300 800;
 }
 @font-face {
-	font-family: "Inter", sans-serif;
+	font-family: "Inter";
   src: url(Inter-VariableFont_opsz,wght.ttf);
   font-weight: 300 1000;
 }
 
 .Quoteurce {
-	font-family: "Onest ExtraBold", sans-serif;
+	font-family: "Onest-ExtraBold";
 	font-weight: 1000;
 	margin-top: 0.2em;
 	margin-bottom: 0em;
 }
 
 .Quote {
-	font-family: OdorMeanChey;
+	font-family: "OdorMeanChey";
 }
 
 .QuoteText {
@@ -69,7 +69,7 @@ body {
 
 a {
 	color: white;
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 }
 
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .storText {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 4.5em;
 	object-fit: contain;
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .storTextBlå {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 4.5em;
 	object-fit: contain;
@@ -167,7 +167,7 @@ a:hover {
 .poweredByAI {
 	display: flex;
 	flex-direction: row;
-	width: 100;
+	width: 100%;
 	justify-content: center;
 	padding-top: 3%;
 	padding-bottom: 3%;
@@ -181,7 +181,7 @@ a:hover {
 }
 
 .poweredByAIText {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 4em;
 	object-fit: contain;
@@ -251,7 +251,7 @@ a:hover {
 }
 
 .titleOm {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 2.5em;
 	text-decoration: underline;
@@ -259,7 +259,7 @@ a:hover {
 }
 
 .namnOmTheo {
-	font-family: Nova Oval;
+	font-family: "Nova-Oval";
 	font-weight: 800;
 	font-size: 4.5em;
 	margin: 0;
@@ -268,7 +268,7 @@ a:hover {
 }
 
 .namnOmNoel {
-	font-family: Nova Square;
+	font-family: "Nova-Square";
 	font-weight: 800;
 	font-size: 4.5em;
 	margin: 0;
@@ -278,7 +278,7 @@ a:hover {
 
 .textOmTheo {
 	text-align: right;
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 1.5em;
 	margin: 0em;
@@ -286,7 +286,7 @@ a:hover {
 
 .textOmNoel {
 	text-align: left;
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 1.5em;
 	margin: 0em;
@@ -324,7 +324,7 @@ a:hover {
 
 .formulär {
 	margin-top: 3em;
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 }
 
@@ -343,7 +343,7 @@ a:hover {
 }
 
 .mail {
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	margin-top: 5em;
 }
@@ -376,7 +376,7 @@ a:hover {
 .billigtEffektivt {
 	margin-top: auto;
 	margin-bottom: auto;
-	font-family: OpenSans Ex;
+	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	font-size: 4em;
 	width: 40%;
@@ -391,7 +391,7 @@ a:hover {
 	text-align: left;
 	padding-left: 2em;
 	padding-right: 2em;
-	font-family: Inter;
+	font-family: "Inter";
 	font-weight: 500;
 }
 
@@ -601,12 +601,12 @@ a:hover {
 	
 	.textOmTheo {
 		text-align: center;
-		font-size: 1.5;
+		font-size: 1em;
 	}
 	
 	.textOmNoel {
 		text-align: center;
-		font-size: 1.5;
+		font-size: 1em;
 	}
 	
 	.comingSoon {
