@@ -127,10 +127,11 @@ a:hover {
 .storText {
 	font-family: "OpenSans-Ex";
 	font-weight: 800;
-	font-size: 4.5em;
+	font-size: 4.3em;
 	object-fit: contain;
-	width: 50%;
-	margin-left:0.3em;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -145,22 +146,21 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	justify-content: space-evenly;
 }
 
 .autoSkolaMocup {
 	object-fit: contain;
-	width: 45%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 50%;
 }
 
 .storTextBlå {
 	font-family: "OpenSans-Ex";
 	font-weight: 800;
-	font-size: 4.5em;
-	object-fit: contain;
+	font-size: 4em;
 	width: 50%;
-	margin-right:0.3em;
+	object-fit: contain;
+	word-wrap: break-word;
 	color: #1F8084;
 }
 
@@ -465,7 +465,7 @@ a:hover {
 
 
 	
-@media screen and (max-width: 640px){
+@media (max-aspect-ratio: 10/9){
 	.litentext {
 		display:flex;
 		flex-direction: column;
