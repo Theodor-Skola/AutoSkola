@@ -469,26 +469,23 @@ a:hover {
 	.litentext {
 		display:flex;
 		flex-direction: column;
+		font-size: 2em;
+	}
+	
+	.logga {
+		width: 100%;
 	}
 	
 	.kontaktaLänk1 {
-		margin:auto;
-		margin-bottom: 0.25em;
-		margin-top: 0.25em;
+		margin:auto;	
 	}
 	
 	.QuoteText {
-		font-size: 3em;
+		font-size: 6em;
 	}
 	
-	.omOssLänk1 {
-		margin-bottom: 0.25em;
-		margin-top: 0.25em;
-	}
-	
-	.prisLänk1 {
-		margin-bottom: 0.25em;
-		margin-top: 0.25em;
+	.Quoteurce {
+		font-size: 2em;
 	}
 	
 	.gammlaAlternativ {
@@ -503,8 +500,8 @@ a:hover {
 	}
 	
 	.storText {
-		font-size:2em;
-		width: 100%;
+		font-size:8em;
+		width: 90%;
 		margin-top: 0.1em;
 		margin-bottom: 1em;
 	}
@@ -520,13 +517,15 @@ a:hover {
 	}
 	
 	.storTextBlå {
-		font-size:2em;
-		width: 100%;
+		font-size:8em;
+		width: 90%;
 		margin-top: 0.1em;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 	.poweredByAIText {
-		font-size:2em;
+		font-size:8em;
 		width: 80%;
 		text-align: left;
 		margin-right: 5%;
@@ -539,7 +538,7 @@ a:hover {
 	.chatGPT {
 		margin-top: auto;
 		margin-bottom: auto;
-		width: 50%;
+		width: 70%;
 	}
 	.chatGPTDiv {
 		width:40%;
@@ -551,13 +550,13 @@ a:hover {
 	}
 	
 	.fotterLänk {
-		font-size: 1.5em;
+		font-size: 5em;
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 	
 	.fotterLänkPurple {
-		font-size: 1.5em;
+		font-size: 5em;
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
@@ -601,24 +600,43 @@ a:hover {
 	
 	.textOmTheo {
 		text-align: center;
-		font-size: 1em;
+		font-size: 3em;
 	}
 	
 	.textOmNoel {
 		text-align: center;
-		font-size: 1em;
+		font-size: 3em;
 	}
 	
+	.titleOm {
+		font-size: 7em;
+	}
+	
+	.namnOmTheo {
+		font-size: 10em;
+	}
+	
+	.namnOmNoel {
+		font-size: 10em;
+	}
+	
+	
+	
+	
 	.comingSoon {
-		font-size: 2.5em;
+		font-size: 6em;
 	}
 	
 	.lärtOss {
-		font-size: 1.2em;
+		font-size: 3em;
 	}
 	
 	.mailAdress {
-		font-size: 2.5em;
+		font-size: 6em;
+	}
+	
+	.skickaMail {
+		font-size: 4.5em;
 	}
 	
 	
@@ -632,6 +650,7 @@ a:hover {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 8em;
 	}
 	
 	.prisPanel {
@@ -639,6 +658,7 @@ a:hover {
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
+		font-size: 2.5em;
 	}
 	
 	.faktisktPris {
@@ -646,11 +666,11 @@ a:hover {
 	}
 	
 	.kostnad {
-		font-size: 2.3em;
+		font-size: 4em;
 	}
 	
 	.år {
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 	}
 	
 	.checkText {
