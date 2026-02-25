@@ -13,7 +13,7 @@ services:
     
   
   proxy:
-    build: .
+    image: "nginx:stable-alpine3.23-perl"
     networks:
       - frontend
       - content
@@ -28,9 +28,6 @@ services:
     build: ./backend
     networks:
       - backend
-      - databases
-    env_file:
-      - .env.local
     
 
 
