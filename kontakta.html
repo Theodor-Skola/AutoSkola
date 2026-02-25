@@ -27,8 +27,46 @@
 </div>
 
 <div class="formulär">
-	<p class="comingSoon">Fyll i formuläret (Coming Soon!)</p>
-	<p class="lärtOss">(efter vi lär oss javascript tänker jag att jag kan lägga in det)</p>
+	<form class="form">
+		<p class="comingSoon">Fyll i formuläret</p>
+		<div class="email">
+			<div class="asteriskDiv">
+				<label for="mail">E-Post</label>
+				<label class="asterisk" for="Mail">*</label>
+			</div>
+			<input class="litenTextFält" type="email" name="mail" id="mail" required placeholder="susanneK@skola.barnstenens.se">
+		</div>
+		<div class="Namn">
+			<div class="asteriskDiv">
+				<label for="förNamn">Namn</label>
+				<label class="asterisk" for="förNamn">*</label>
+			</div>
+			<input class="litenTextFält" type="text" name="förNamn" id="förNamn" required placeholder="Susanne">
+			<input class="litenTextFält" type="text" name="efterNamn" id="efterNamn" required placeholder="Karlsson">
+		</div>
+		<div class="skolaFrån">
+			<div class="asteriskDiv">
+				<label for ="skolaFrån">Skola</label>
+				<label class="asterisk" for="skolaFrån">*</label>
+			</div>
+			<input class="litenTextFält" type="text" name="skolaFrån" id="skolaFrån" required placeholder="Barnstens Gymnasiet">
+		</div>
+		<div class="ärKund">
+			<div class="asteriskDiv">
+				<label for="ärKund">Är du kund?</label>
+				<label class="asterisk" for="ärKund">*</label>
+			</div>
+			<input type="checkbox" name="ärKund" id="ärKund">
+		</div>
+		<div class="medellande">
+			<div class="asteriskDiv">
+				<label for="meddelande">Ditt meddelande</label>
+				<label class="asterisk" for="meddelande">*</label>
+			</div>
+			<textarea class="storTextFält" type="text" name="meddelande" id="meddelande"></textarea>
+		</div>
+		<button class="skickaFormulär">Skicka formulär</button>
+	</form>
 </div>
 
 <img class="avskärmare" src="Line1.png" alt="Avskärmare">
@@ -45,5 +83,4 @@
 </div>
 
 </body>
-
 </html>
