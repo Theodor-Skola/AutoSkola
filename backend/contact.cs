@@ -21,7 +21,7 @@ class ContactInfo
         skolaFrån = skolaFrån.Replace(';', ',');
         meddelande = meddelande.Replace(';', ',').Replace("\r\n", "\t");
 
-        return $"{mail};{förNamn};{efterNamn};{ärKund};{skolaFrån};{meddelande}";
+        return $"{mail};{förNamn};{efterNamn};{ärKund};{skolaFrån};{meddelande}\n";
 
     }
 }
