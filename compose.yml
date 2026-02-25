@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  apache:
+    image: "httpd:2.4.66-alpine"
+    networks:
+      - content
+    volumes:
+      - ./Content:/usr/local/apache2/htdocs
+      - ./apache.conf:/usr/local/apache2/conf/httpd.conf:ro
+    
+    
+    
+  
+  proxy:
+    image: "nginx:stable-alpine3.23-perl"
+    networks:
+      - frontend
+      - content
+      - backend
+    volumes:
+      - ./Nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 80:80
+
+
+  backend:
+    build: ./backend
+    networks:
+      - backend
+    
+
+
+
+
+networks:
+  frontend:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.host_binding_ipv4: "127.0.0.1"
+  content:
+    driver: bridge
+  backend:
+    driver: bridge
