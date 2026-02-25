@@ -1,28 +1,27 @@
+using System.IO.IsolatedStorage;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 //Using the right port
 builder.WebHost.UseUrls("http://0.0.0.0:1337");
 
+// Add anti-forgery services
+builder.Services.AddAntiforgery();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+// Use anti-forgery middleware
+app.UseAntiforgery();
 
-app.MapPost("/contact", () =>
+app.MapPost("/contact", ([FromForm] ContactInfo info) =>
 {
-    return "We got you!";
-});
+    Console.WriteLine("Got thing");
+    return info.Serialize();
+}).DisableAntiforgery();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+
