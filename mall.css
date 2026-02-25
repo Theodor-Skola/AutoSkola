@@ -323,9 +323,23 @@ a:hover {
 }
 
 .formulär {
-	margin-top: 3em;
 	font-family: "OpenSans-Ex";
 	font-weight: 800;
+}
+
+.form {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 0em solid purple;
+	border-radius: 2em;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 0 0.5em black;
 }
 
 .comingSoon {
@@ -334,18 +348,98 @@ a:hover {
 	margin-bottom: 0;
 }
 
-.lärtOss {
-	font-size: 1.8em;
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-top: 0;
-	margin-bottom: 0;
+.asteriskDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	justify-content: center;
+}
+
+.asterisk {
+	font-size: 70%;
+	margin-bottom: auto;
+	color: darkred;
+}
+
+input[type=text] {
+	border: 0em solid #f7f7f7;
+	background-color: #f7f7f7;
+	outline: none;
+	font-size: 1em;
+	/*
+	transition: box-shadow 3s ease all;
+	transition: background-color 0.4s ease-in-out;
+	*/
+}
+input[type=email] {
+	border: 0em solid #f7f7f7;
+	background-color: #f7f7f7;
+	outline: none;
+	/*
+	transition: box-shadow 0.4s;
+	transition: background-color 0.4s;
+	*/
+}
+
+input[type=text]:focus {
+	background-color: white;
+}
+input[type=email]:focus {
+	background-color: white;
+}
+
+.litenTextFält {
+	border-radius: 0.2em;
+	box-shadow: 0 0 0.5em #84207F;
+}
+.litenTextFält:focus {
+	box-shadow: 0 0 0.8em #84207F;
+}
+
+.storTextFält {
+	width: 80%;
+	height: 9em;
+	border-radius: 0.8em;
+	box-shadow: 0 0 2em #84207F;
+	text-align: top;
+	outline: none;
+}
+
+.storTextFält:focus {
+	box-shadow: 0 0 3.5em #84207F;
+}
+
+.skickaFormulär {
+	margin-top: 1em;
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .mail {
 	font-family: "OpenSans-Ex";
 	font-weight: 800;
 	margin-top: 5em;
+}
+
+.email {
+	margin-bottom: 1em;
+}
+
+.Namn {
+	margin-bottom: 1em;
+}
+
+.skolaFrån {
+	margin-bottom: 1em;
+}
+
+.ärKund {
+	margin-bottom: 1em;
+}
+
+.medellande {
+	margin-bottom: 1em;
 }
 
 .skickaMail {
