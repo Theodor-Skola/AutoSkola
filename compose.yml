@@ -28,6 +28,8 @@ services:
     build: ./backend
     networks:
       - backend
+    volumes:
+      - ./user.csv:/app/user.csv
     
 
 

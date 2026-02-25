@@ -1,5 +1,9 @@
+using System.Collections.Concurrent;
 using System.IO.IsolatedStorage;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
+
+var linesToAdd = new ConcurrentQueue<string>();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,12 +20,38 @@ var app = builder.Build();
 // Use anti-forgery middleware
 app.UseAntiforgery();
 
+
+
 app.MapPost("/contact", ([FromForm] ContactInfo info) =>
 {
     Console.WriteLine("Got thing");
-    return info.Serialize();
+    string newLine = info.Serialize();
+
+    Console.WriteLine("Adding to que");
+    linesToAdd.Enqueue(newLine);
+    return newLine;
 }).DisableAntiforgery();
 
+
+
+_ = appendNewThings();
 app.Run();
 
 
+async Task appendNewThings(){
+    Console.WriteLine("Starting writer");
+    
+
+    while(true){
+        string toAppend = "";
+
+        if(linesToAdd.TryDequeue(out toAppend)){
+            Console.WriteLine("New line to append");
+            File.AppendAllText("/app/user.csv", toAppend);
+        }else{
+            await Task.Delay(100);
+        }
+    }
+
+    
+}
