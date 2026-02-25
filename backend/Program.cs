@@ -3,6 +3,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+//Using the right port
+builder.WebHost.UseUrls("http://0.0.0.0:1337");
+
 
 var app = builder.Build();
 
