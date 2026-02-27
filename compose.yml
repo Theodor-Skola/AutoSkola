@@ -20,8 +20,10 @@ services:
       - backend
     volumes:
       - ./Nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./logs:/var/log/nginx
     ports:
       - 80:80
+      
 
 
   backend:
