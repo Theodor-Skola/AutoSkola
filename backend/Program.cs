@@ -47,7 +47,7 @@ async Task appendNewThings(){
 
         if(linesToAdd.TryDequeue(out toAppend)){
             Console.WriteLine("New line to append");
-            File.AppendAllText("/app/user.csv", toAppend);
+            File.AppendAllText("/app/contact.csv", toAppend);
         }else{
             await Task.Delay(100);
         }
