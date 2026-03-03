@@ -26,15 +26,13 @@
 	<p class="Quoteurce">-Theodor (superentreprenör) Wemmel</p>
 </div>
 
-<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-
 <div class="formulär">
-	<form class="form" action="/api/contact" target="dummyframe" method="post" enctype="application/x-www-form-urlencoded">
+	<form class="form">
 		<p class="comingSoon">Fyll i formuläret</p>
 		<div class="email">
 			<div class="asteriskDiv">
 				<label for="mail">E-Post</label>
-				<label class="asterisk" for="Mail">*</label>
+				<label class="asterisk" for="mail">*</label>
 			</div>
 			<input class="litenTextFält" type="email" name="mail" id="mail" required placeholder="susanneK@skola.barnstenens.se">
 		</div>
@@ -56,18 +54,20 @@
 		<div class="ärKund">
 			<div class="asteriskDiv">
 				<label for="ärKund">Är du kund?</label>
-				<label class="asterisk" for="ärKund">*</label>
 			</div>
-			<input type="checkbox" name="ärKund" id="ärKund" value="true">
+			<label class="switch">
+				<input type="checkbox" name="ärKund" id="ärKund">
+				<span class="slider"></span>
+			</label>
 		</div>
 		<div class="medellande">
 			<div class="asteriskDiv">
 				<label for="meddelande">Ditt meddelande</label>
 				<label class="asterisk" for="meddelande">*</label>
 			</div>
-			<textarea class="storTextFält" type="text" name="meddelande" id="meddelande"></textarea>
+			<textarea class="storTextFält" name="meddelande" id="meddelande"></textarea>
 		</div>
-		<button class="skickaFormulär">Skicka formulär</button>
+		<button class="skickaFormulär">Skicka<br>formulär</button>
 	</form>
 </div>
 
