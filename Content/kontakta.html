@@ -27,7 +27,7 @@
 </div>
 
 <div class="formulär">
-	<form class="form">
+	<form class="form" id="form">
 		<p class="comingSoon">Fyll i formuläret</p>
 		<div class="email">
 			<div class="asteriskDiv">
@@ -67,9 +67,73 @@
 			</div>
 			<textarea class="storTextFält" name="meddelande" id="meddelande"></textarea>
 		</div>
-		<button class="skickaFormulär">Skicka<br>formulär</button>
+		<button class="skickaFormulär" type="submit" id="submitButton" popovertarget="popup">Skicka<br>formulär</button>
 	</form>
 </div>
+
+<dialog id="thankYouModal">
+  <p>Tack! Ditt meddelande har skickats. 🎉</p>
+  <button id="closeDialog">Stäng</button>
+</dialog>
+
+<script>
+const form = document.getElementById('form');
+const modal = document.getElementById('thankYouModal');
+const closeBtn = document.getElementById('closeDialog');
+
+form.addEventListener('submit', function(event) {
+	console.log("start");
+	// Stoppa formuläret från att ladda om sidan direkt
+	event.preventDefault();
+
+	// Lägga in kod för att faktiskt skicka formuläret (fetch)
+	getData();
+  
+	// Visa popup-fönstret
+	modal.showModal(); 
+  
+	// Nollställ formuläret (valfritt)
+	form.reset();
+});
+
+// Stäng popupen när man klickar på knappen
+closeBtn.addEventListener('click', () => {
+  modal.close();
+});
+
+
+
+async function getData() {
+  const url = "/api/contact";
+  
+  let data = {
+  mail: document.getElementById("mail").value,
+  förNamn: document.getElementById("förNamn").value,
+  efterNamn: document.getElementById("efterNamn").value,
+  skolaFrån: document.getElementById("skolaFrån").value,
+  ärKund: document.getElementById("ärKund").checked,
+  meddelande: document.getElementById("meddelande").value
+  };
+  
+  let params = new URLSearchParams(data);
+  
+  
+  let bodySt = params.toString();
+  
+    const response = await fetch(url, {  
+		method: "POST",
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded'
+		  },
+		  body: bodySt
+		});
+	
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+  
+}
+</script>
 
 <img class="avskärmare" src="Line1.png" alt="Avskärmare">
 

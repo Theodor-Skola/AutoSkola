@@ -513,8 +513,8 @@ input[type=email]:focus {
 	box-shadow: 0 0 0.2em #1F8084;
 }
 
-.skickaFormulär:focus {
-	
+.skickaFormulär:hover {
+	box-shadow: 0 0 0.1em #1F8084;
 }
 
 .skickaMail {
