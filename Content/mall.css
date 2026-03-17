@@ -531,6 +531,35 @@ input[type=email]:focus {
 	word-wrap: break-word;
 }
 
+#thankYouModal {
+	font-family: "OpenSans-Ex";
+	font-weight: 800;
+	border-radius: 2em;
+	border-width: 0em;
+	font-size: 2em;
+	background: radial-gradient(#1F808499, #1F8084df);
+	box-shadow: 0 0 5em 0.1em #1F8084;
+}
+
+#closeDialog {
+	font-family: "OpenSans-Ex";
+	font-weight: 800;
+	line-height: 0.9em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	color: #f7f7f7;
+	border-radius: 1em;
+	border: 0 solid white;
+	background-color: #28a8ad;
+	width: 40%;
+	
+	font-size: 1.5em;
+	box-shadow: 0 0 0.2em #1F8084;
+}
+
+.meddelandSkickats {
+}
+
 
 
 
