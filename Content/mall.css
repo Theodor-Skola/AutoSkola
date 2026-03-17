@@ -350,7 +350,6 @@ a:hover {
 .asteriskDiv {
 	display: flex;
 	flex-direction: row;
-	align-items: top;
 	justify-content: center;
 }
 
@@ -381,7 +380,6 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 3em;
 }
@@ -394,7 +392,6 @@ a:hover {
 	left: 0.4em;
 	bottom: 0.4em;
 	background-color: white;
-	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 50%;
 }
@@ -405,8 +402,6 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 }
 
@@ -452,7 +447,6 @@ input[type=email]:focus {
 	height: 9em;
 	border-radius: 0.8em;
 	box-shadow: 0 0 2em #84207F;
-	text-align: top;
 	outline: none;
 	border: 0 solid white;
 	padding: 0.5em;
