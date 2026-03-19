@@ -19,7 +19,7 @@ class ContactInfo
         efterNamn = efterNamn.Replace(';', ',');
 
         skolaFrån = skolaFrån.Replace(';', ',');
-        meddelande = meddelande.Replace(';', ',').Replace("\r\n", "\t");
+        meddelande = meddelande.Replace(';', ',').Replace("\n", "\t").Replace("\n\r", "\t");
 
         return $"{mail};{förNamn};{efterNamn};{ärKund};{skolaFrån};{meddelande}\n";
 
