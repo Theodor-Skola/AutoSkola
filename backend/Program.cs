@@ -29,7 +29,7 @@ app.MapPost("/contact", ([FromForm] ContactInfo info) =>
 
     Console.WriteLine("Adding to que");
     linesToAdd.Enqueue(newLine);
-    return newLine;
+    return Results.Created("/contact", newLine);
 }).DisableAntiforgery();
 
 
