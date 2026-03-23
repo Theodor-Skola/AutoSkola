@@ -45,7 +45,7 @@ async Task appendNewThings(){
     while(true){
         string toAppend = "";
 
-        if(linesToAdd.TryDequeue(out toAppend)){
+        if(linesToAdd.TryDequeue(out toAppend!)){
             Console.WriteLine("New line to append");
             File.AppendAllText("/app/contact.csv", toAppend);
         }else{
